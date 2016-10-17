@@ -30,10 +30,9 @@ header {
 
 .blinking-cursor {
   display: inline-block;
-  height: 36px;
+  height: 32px;
   width: 20px;
-  background-color: #ffffff;
-  /*animation: blink-cursor 1s steps(1) 3;*/ }
+  background-color: #ffffff; }
 
 a.back-to-top {
   float: right;
@@ -144,50 +143,50 @@ nav a {
 
 @keyframes glitchy-words-anim-1 {
   0% {
-    clip: rect(10px, 807px, 116px, 0); }
+    clip: rect(414px, 807px, 157px, 0); }
   10% {
-    clip: rect(110px, 807px, 82px, 0); }
+    clip: rect(316px, 807px, 229px, 0); }
   20% {
-    clip: rect(73px, 807px, 382px, 0); }
+    clip: rect(35px, 807px, 239px, 0); }
   30.0% {
-    clip: rect(327px, 807px, 26px, 0); }
+    clip: rect(12px, 807px, 216px, 0); }
   40% {
-    clip: rect(337px, 807px, 333px, 0); }
+    clip: rect(365px, 807px, 498px, 0); }
   50% {
-    clip: rect(4px, 807px, 492px, 0); }
+    clip: rect(395px, 807px, 495px, 0); }
   60.0% {
-    clip: rect(370px, 807px, 424px, 0); }
+    clip: rect(273px, 807px, 285px, 0); }
   70% {
-    clip: rect(242px, 807px, 103px, 0); }
+    clip: rect(10px, 807px, 36px, 0); }
   80% {
-    clip: rect(17px, 807px, 194px, 0); }
+    clip: rect(153px, 807px, 97px, 0); }
   90% {
-    clip: rect(160px, 807px, 427px, 0); }
+    clip: rect(345px, 807px, 87px, 0); }
   100% {
-    clip: rect(184px, 807px, 264px, 0); } }
+    clip: rect(79px, 807px, 262px, 0); } }
 @keyframes glitchy-words-anim-2 {
   0% {
-    clip: rect(360px, 807px, 144px, 0); }
+    clip: rect(152px, 807px, 499px, 0); }
   10% {
-    clip: rect(45px, 807px, 306px, 0); }
+    clip: rect(415px, 807px, 280px, 0); }
   20% {
-    clip: rect(422px, 807px, 234px, 0); }
+    clip: rect(206px, 807px, 176px, 0); }
   30.0% {
-    clip: rect(460px, 807px, 198px, 0); }
+    clip: rect(461px, 807px, 325px, 0); }
   40% {
-    clip: rect(189px, 807px, 311px, 0); }
+    clip: rect(370px, 807px, 33px, 0); }
   50% {
-    clip: rect(19px, 807px, 289px, 0); }
+    clip: rect(291px, 807px, 214px, 0); }
   60.0% {
-    clip: rect(456px, 807px, 447px, 0); }
+    clip: rect(109px, 807px, 39px, 0); }
   70% {
-    clip: rect(389px, 807px, 238px, 0); }
+    clip: rect(71px, 807px, 2px, 0); }
   80% {
-    clip: rect(367px, 807px, 365px, 0); }
+    clip: rect(488px, 807px, 243px, 0); }
   90% {
-    clip: rect(91px, 807px, 232px, 0); }
+    clip: rect(2px, 807px, 412px, 0); }
   100% {
-    clip: rect(139px, 807px, 213px, 0); } }
+    clip: rect(395px, 807px, 297px, 0); } }
 .glitchy-animate > img {
   position: absolute;
   top: 0px;

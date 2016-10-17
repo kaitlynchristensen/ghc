@@ -1,4 +1,4 @@
-/* glitch animation from http://codepen.io/chriscoyier/pen/FwJux/ */
+/* glitch animation from http://codepen.io/chriscoyier/pen/FwJux/ by chriscoyier */
 @mixin imgGlitch($name, $intensity, $width, $height, $top, $left) {
   
   $steps: $intensity;
@@ -50,6 +50,7 @@
 	width: 100%;
 	min-height: 100%;
 	padding: 25px 35px;
+	overflow: hidden;
 }
 .no-padding-right {
 	padding-right: 0;
@@ -57,6 +58,9 @@
 #home {
 	background: #729897;
 	height: 100%;
+}
+#about {
+	background: #678887;
 }
 #attend {
 	background: #5C7776;
@@ -73,7 +77,7 @@ header {
 }
 .blinking-cursor {
 	display: inline-block;
-	height: 32px;
+	height: 34px;
 	width: 20px;
 	background-color: #ffffff;
 }
@@ -193,6 +197,80 @@ nav a {
 }
 .link-screens {
 	display: none;
+}
+
+/*************************/
+/* About container styles */
+/*************************/
+
+#about a.back-to-top {
+	color: #5C7776;
+}
+.monitor-slideshow {
+	height: 700px;
+	width: 700px;
+	overflow: hidden;
+	margin-left: -115px;
+}
+.monitor-slideshow div {
+	position: absolute;
+}
+.monitor {
+	height: 700px;
+	width: 700px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-image: url(images/twothousandsmonitor.png);
+}
+.slide {
+	height: 600px;
+	width: 650px;
+	background-repeat: no-repeat;
+	background-position: 15px 15px;
+}
+#slide-1 {
+	background-image: url(images/ghc1.jpg);
+}
+#slide-2 {
+	display: none;
+	background-image: url(images/ghc2.jpg);
+}
+#slide-3 {
+	display: none;
+	background-image: url(images/ghc3.jpg);
+}
+.scrolling-view {
+	height: 600px;
+	position: relative;
+	overflow: hidden;
+}
+.scrolling-content {
+	position: absolute;
+	top: 210px;
+}
+.scrolling-content p {
+	opacity: .6;
+}
+p.highlighted {
+	opacity: 1;
+}
+.control-arrows {
+	background-image: url(images/red-arrow.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 85%;
+	height: 20px;
+	margin-top: 40px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.directions {
+	color: #5C7776;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 15px;
+	line-height: 20px;
 }
 
 /*************************/

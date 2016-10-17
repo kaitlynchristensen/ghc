@@ -13,9 +13,9 @@
 <div class="container" id="home">
 	<a name="home"></a>
 	<nav>
+		<a href="#about" id="about-link">about</a>
 		<a href="#attend" id="attend-link">attend</a>
 		<a href="#schedule" id="schedule-link">schedule</a>
-		<a href="#!" id="about-link">about</a>
 	</nav>
 	<div class="social-media">
 		<a href="https://www.facebook.com/gracehoppercelebration" class="facebook"></a>
@@ -33,6 +33,42 @@
 		<img src="images/schedule.png" height="500px" class="link-screens" id="schedule-screens">
 		<img src="images/about.png" height="500px" class="link-screens" id="about-screens">
 		<img src="images/monitors_no_screens.png" height="500px">
+	</div>
+</div>
+
+<div class="container" id="about">
+	<a name="about"></a>
+	<header>
+		about<div class="blinking-cursor" data-aos="blink-cursor"></div>
+		<a href="#home" class="back-to-top">back to top</a>
+	</header>
+	<div class="content">
+		<div class="col-6">
+			<div class="monitor-slideshow">
+				<div id="slide-1" class="slide"></div>
+				<div id="slide-2" class="slide"></div>
+				<div id="slide-3" class="slide"></div>
+				<div class="monitor"></div>
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="scrolling-view">
+				<div id="scrolling-content" class="scrolling-content position-1">
+					<p class="section-start section-1 highlighted"><span class="subhead">About the Grace Hopper Conference</span>GHC is the world&#8217;s largest technical conference for women in computing. Every year, women technologists and the best minds in computing convene to highlight the contributions of women to computing. The Anita Borg Institute co-presents GHC with the Association of Computing Machinery (ACM).</p>
+					<p class="section-1 highlighted">The conference results in collaborative proposals, networking and mentoring for our attendees. Conference presenters are leaders in their respective fields, representing industry, academia and government. The conference also offers professional development through a variety of activities.</p>
+
+					<p class="section-start section-2"><span class="subhead">History</span>Co-founded by Dr. Anita Borg and Dr. Telle Whitney in 1994 and inspired by the legacy of Admiral Grace Murray Hopper, Anita Borg Institute&#8217;s Grace Hopper Celebration (GHC) of Women in Computing brings the research and career interests of women in computing to the forefront.</p>
+
+					<p class="section-start section-3"><span class="subhead">Impact</span>GHC 15, held in Houston, Texas, hosted almost 12,000 attendees from 63 countries, with over 1,300 companies. GHC 15 had a 50% increase in attendees from 2014 and we expect it to grow to 15,000 attendees in 2016. GHC 15 had over 200 sessions and nearly 700 speakers as well as a career fair with over 200 booths. 95% of respondents rated the overall quality of GHC 15 as Excellent or Good and 90% felt inspired about future career opportunities after attending.</p>
+				</div>
+			</div>
+			<div class="control-arrows">
+				<div id="right-arrow"></div>
+				<div class="directions">use arrow keys</div>
+				<div id="left-arrow"></div>
+			</div>
+
+		</div>
 	</div>
 </div>
 
@@ -361,9 +397,70 @@
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.0.4/dist/aos.js"></script>
 
 <script>
+
+function prevAbout() {
+	if ($('#scrolling-content').hasClass('position-1')) {
+		$('#scrolling-content').removeClass('position-1').addClass('position-3');
+		$('#scrolling-content').animate({top: "-90px"});
+		$('.section-1').removeClass('highlighted');
+		$('.section-3').addClass('highlighted');
+		$('#slide-1').hide();
+		$('#slide-3').show();
+	} else if ($('#scrolling-content').hasClass('position-2')) {
+		$('#scrolling-content').removeClass('position-2').addClass('position-1');
+		$('.scrolling-content').animate({top: "-210px"});
+		$('.section-2').removeClass('highlighted');
+		$('.section-1').addClass('highlighted');
+		$('#slide-2').hide();
+		$('#slide-1').show();
+	} else {
+		$('#scrolling-content').removeClass('position-3').addClass('position-2');
+		$('.scrolling-content').animate({top: "40px"});
+		$('.section-3').removeClass('highlighted');
+		$('.section-2').addClass('highlighted');
+		$('#slide-3').hide();
+		$('#slide-2').show();
+	}
+}
+
+function nextAbout() {
+	if ($('#scrolling-content').hasClass('position-1')) {
+		$('#scrolling-content').removeClass('position-1').addClass('position-2');
+		$('.scrolling-content').animate({top: "40px"});
+		$('.section-1').removeClass('highlighted');
+		$('.section-2').addClass('highlighted');
+		$('#slide-1').hide();
+		$('#slide-2').show();
+	} else if ($('#scrolling-content').hasClass('position-2')) {
+		$('#scrolling-content').removeClass('position-2').addClass('position-3');
+		$('.scrolling-content').animate({top: "-90px"});
+		$('.section-2').removeClass('highlighted');
+		$('.section-3').addClass('highlighted');
+		$('#slide-2').hide();
+		$('#slide-3').show();
+	} else {
+		$('#scrolling-content').removeClass('position-3').addClass('position-1');
+		$('.scrolling-content').animate({top: "210px"});
+		$('.section-3').removeClass('highlighted');
+		$('.section-1').addClass('highlighted');
+		$('#slide-3').hide();
+		$('#slide-1').show();
+	}
+}
+
 AOS.init();
 
 $(document).ready(function() {
+
+	$(document).keydown(function(e){
+	    if (e.keyCode == 37) { // left pressed
+	    	prevAbout();
+	    }
+	    if (e.keyCode == 39) { // right pressed
+	    	nextAbout();
+	    }
+	});
+
 	$('#attend-link').hover(function() {
 			$('#attend-screens').show();
 			$('.title-screens').hide();

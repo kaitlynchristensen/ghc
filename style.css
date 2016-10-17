@@ -57,10 +57,11 @@ p {
 
 p.address {
   display: inline-block;
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'courier-std', 'Source Code Pro', monospace;
   margin-left: 55px;
   margin-top: 15px;
   margin-bottom: 15px;
+  padding: 5px;
   font-weight: bold;
   font-size: 1.2em;
   border-bottom: #4A5E5D solid 1px;
@@ -143,50 +144,50 @@ nav a {
 
 @keyframes glitchy-words-anim-1 {
   0% {
-    clip: rect(209px, 807px, 19px, 0); }
+    clip: rect(24px, 807px, 365px, 0); }
   10% {
-    clip: rect(422px, 807px, 313px, 0); }
+    clip: rect(229px, 807px, 447px, 0); }
   20% {
-    clip: rect(152px, 807px, 207px, 0); }
+    clip: rect(301px, 807px, 361px, 0); }
   30.0% {
-    clip: rect(11px, 807px, 278px, 0); }
+    clip: rect(262px, 807px, 93px, 0); }
   40% {
-    clip: rect(38px, 807px, 485px, 0); }
+    clip: rect(343px, 807px, 127px, 0); }
   50% {
-    clip: rect(38px, 807px, 199px, 0); }
+    clip: rect(204px, 807px, 236px, 0); }
   60.0% {
-    clip: rect(392px, 807px, 405px, 0); }
+    clip: rect(432px, 807px, 324px, 0); }
   70% {
-    clip: rect(247px, 807px, 242px, 0); }
+    clip: rect(45px, 807px, 46px, 0); }
   80% {
-    clip: rect(495px, 807px, 169px, 0); }
+    clip: rect(325px, 807px, 330px, 0); }
   90% {
-    clip: rect(152px, 807px, 281px, 0); }
+    clip: rect(131px, 807px, 327px, 0); }
   100% {
-    clip: rect(432px, 807px, 409px, 0); } }
+    clip: rect(482px, 807px, 41px, 0); } }
 @keyframes glitchy-words-anim-2 {
   0% {
-    clip: rect(37px, 807px, 154px, 0); }
+    clip: rect(93px, 807px, 343px, 0); }
   10% {
-    clip: rect(419px, 807px, 311px, 0); }
+    clip: rect(79px, 807px, 212px, 0); }
   20% {
-    clip: rect(424px, 807px, 344px, 0); }
+    clip: rect(166px, 807px, 241px, 0); }
   30.0% {
-    clip: rect(107px, 807px, 115px, 0); }
+    clip: rect(155px, 807px, 52px, 0); }
   40% {
-    clip: rect(21px, 807px, 459px, 0); }
+    clip: rect(76px, 807px, 148px, 0); }
   50% {
-    clip: rect(184px, 807px, 365px, 0); }
+    clip: rect(19px, 807px, 200px, 0); }
   60.0% {
-    clip: rect(389px, 807px, 355px, 0); }
+    clip: rect(50px, 807px, 302px, 0); }
   70% {
-    clip: rect(266px, 807px, 269px, 0); }
+    clip: rect(462px, 807px, 382px, 0); }
   80% {
-    clip: rect(293px, 807px, 433px, 0); }
+    clip: rect(400px, 807px, 174px, 0); }
   90% {
-    clip: rect(346px, 807px, 23px, 0); }
+    clip: rect(107px, 807px, 332px, 0); }
   100% {
-    clip: rect(354px, 807px, 451px, 0); } }
+    clip: rect(352px, 807px, 99px, 0); } }
 .glitchy-animate > img {
   position: absolute;
   top: 0px;
@@ -240,7 +241,7 @@ nav a {
   overflow: auto; }
 
 .console-body * {
-  font-family: 'Source Code Pro', monospace;
+  font-family: 'courier-std', 'Source Code Pro', monospace;
   color: #ffffff; }
 
 .console-header {
@@ -280,23 +281,6 @@ nav a {
 *:focus {
   outline: none; }
 
-.cursor {
-  font-size: 12px;
-  background-color: white;
-  color: white;
-  position: relative;
-  opacity: 0.8; }
-
-input#setter {
-  /* explorer doesn't support [att=val] selector :( */
-  left: -1000px;
-  position: absolute; }
-
-#getter {
-  margin-top: 20px;
-  margin-left: -180px;
-  float: left; }
-
 /*************************/
 /* Schedule container styles */
 /*************************/
@@ -318,7 +302,7 @@ input#setter {
 .day-label {
   display: inline-block;
   padding: 10px 20px;
-  font-family: "Source Code Pro", monospace;
+  font-family: 'courier-std', "Source Code Pro", monospace;
   color: #ffffff; }
 
 .schedule-button {

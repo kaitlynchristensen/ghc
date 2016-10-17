@@ -101,10 +101,11 @@ p {
 
 p.address {
 	display: inline-block;
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'courier-std', 'Source Code Pro', monospace;
 	margin-left: 55px;
 	margin-top: 15px;
 	margin-bottom: 15px;
+	padding: 5px;
 	font-weight: bold;
 	font-size: 1.2em;
 	border-bottom: #4A5E5D solid 1px;
@@ -232,7 +233,7 @@ nav a {
 	overflow: auto;
 }
 .console-body * {
-	font-family: 'Source Code Pro', monospace;
+	font-family: 'courier-std', 'Source Code Pro', monospace;
 	color: #ffffff;
 }
 .console-header {
@@ -272,22 +273,6 @@ nav a {
 *:focus {
 	outline: none;
 }
-.cursor {
-				font-size: 12px;
-				background-color: white;
-				color: white;
-				position: relative;
-				opacity: 0.8;
-			}
-input#setter { /* explorer doesn't support [att=val] selector :( */
-				left: -1000px;
-				position: absolute;
-			}
-#getter {
-                                   margin-top: 20px;
-    margin-left: -180px;
-    float: left;
-                        }
 
 
 /*************************/
@@ -312,7 +297,7 @@ input#setter { /* explorer doesn't support [att=val] selector :( */
 .day-label {
 	display: inline-block;
 	padding: 10px 20px;
-	font-family: "Source Code Pro", monospace;
+	font-family: 'courier-std', "Source Code Pro", monospace;
 	color: #ffffff;
 }
 .schedule-button {

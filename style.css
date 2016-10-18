@@ -14,17 +14,17 @@
   padding-right: 0; }
 
 #home {
-  background: #729897;
+  background: #93C0E8;
   height: 100%; }
 
 #about {
-  background: #678887; }
+  background: #83ABCF; }
 
 #attend {
-  background: #5C7776; }
+  background: #7193B2; }
 
 #schedule {
-  background: #4A5E5D; }
+  background: #59748C; }
 
 header {
   color: #A01912;
@@ -67,8 +67,8 @@ p.address {
   padding: 5px;
   font-weight: bold;
   font-size: 1.2em;
-  border-bottom: #4A5E5D solid 1px;
-  border-top: #4A5E5D solid 1px; }
+  border-bottom: #59748C solid 1px;
+  border-top: #59748C solid 1px; }
 
 .section-start {
   margin-top: 15px; }
@@ -147,50 +147,50 @@ nav a {
 
 @keyframes glitchy-words-anim-1 {
   0% {
-    clip: rect(327px, 807px, 243px, 0); }
+    clip: rect(147px, 807px, 58px, 0); }
   10% {
-    clip: rect(89px, 807px, 296px, 0); }
+    clip: rect(78px, 807px, 398px, 0); }
   20% {
-    clip: rect(308px, 807px, 448px, 0); }
-  30.0% {
-    clip: rect(167px, 807px, 214px, 0); }
+    clip: rect(41px, 807px, 420px, 0); }
+  30% {
+    clip: rect(494px, 807px, 15px, 0); }
   40% {
-    clip: rect(426px, 807px, 426px, 0); }
+    clip: rect(330px, 807px, 382px, 0); }
   50% {
-    clip: rect(96px, 807px, 268px, 0); }
-  60.0% {
-    clip: rect(433px, 807px, 249px, 0); }
+    clip: rect(211px, 807px, 217px, 0); }
+  60% {
+    clip: rect(166px, 807px, 204px, 0); }
   70% {
-    clip: rect(297px, 807px, 470px, 0); }
+    clip: rect(108px, 807px, 427px, 0); }
   80% {
-    clip: rect(99px, 807px, 83px, 0); }
+    clip: rect(321px, 807px, 348px, 0); }
   90% {
-    clip: rect(367px, 807px, 76px, 0); }
+    clip: rect(389px, 807px, 300px, 0); }
   100% {
-    clip: rect(152px, 807px, 83px, 0); } }
+    clip: rect(323px, 807px, 79px, 0); } }
 @keyframes glitchy-words-anim-2 {
   0% {
-    clip: rect(461px, 807px, 112px, 0); }
+    clip: rect(332px, 807px, 243px, 0); }
   10% {
-    clip: rect(92px, 807px, 302px, 0); }
+    clip: rect(65px, 807px, 197px, 0); }
   20% {
-    clip: rect(296px, 807px, 171px, 0); }
-  30.0% {
-    clip: rect(428px, 807px, 271px, 0); }
+    clip: rect(28px, 807px, 311px, 0); }
+  30% {
+    clip: rect(432px, 807px, 311px, 0); }
   40% {
-    clip: rect(444px, 807px, 324px, 0); }
+    clip: rect(19px, 807px, 160px, 0); }
   50% {
-    clip: rect(490px, 807px, 97px, 0); }
-  60.0% {
-    clip: rect(342px, 807px, 412px, 0); }
+    clip: rect(314px, 807px, 110px, 0); }
+  60% {
+    clip: rect(144px, 807px, 199px, 0); }
   70% {
-    clip: rect(65px, 807px, 246px, 0); }
+    clip: rect(423px, 807px, 300px, 0); }
   80% {
-    clip: rect(487px, 807px, 283px, 0); }
+    clip: rect(258px, 807px, 83px, 0); }
   90% {
-    clip: rect(245px, 807px, 486px, 0); }
+    clip: rect(101px, 807px, 184px, 0); }
   100% {
-    clip: rect(39px, 807px, 252px, 0); } }
+    clip: rect(92px, 807px, 122px, 0); } }
 .glitchy-animate > img {
   position: absolute;
   top: 0px;
@@ -212,7 +212,7 @@ nav a {
 /* About container styles */
 /*************************/
 #about a.back-to-top {
-  color: #5C7776; }
+  color: #7193B2; }
 
 .monitor-slideshow {
   height: 700px;
@@ -293,7 +293,7 @@ p.highlighted {
   margin-left: auto; }
 
 .directions {
-  color: #5C7776;
+  color: #7193B2;
   text-align: center;
   text-transform: uppercase;
   font-size: 15px;
@@ -303,7 +303,7 @@ p.highlighted {
 /* Attend container styles */
 /*************************/
 #attend a.back-to-top {
-  color: #4A5E5D; }
+  color: #59748C; }
 
 .console-frame {
   background-color: #B3B3B3;
@@ -312,7 +312,7 @@ p.highlighted {
   margin-right: -50px; }
 
 .console-menu-bar {
-  background-color: #4A5E5D;
+  background-color: #59748C;
   width: 100%;
   height: 20px;
   border-top-right-radius: 5px;
@@ -324,7 +324,7 @@ p.highlighted {
   margin: 2px;
   height: 16px;
   width: 16px;
-  color: #364443; }
+  color: #495E72; }
 
 .console-body {
   width: 100%;
@@ -379,14 +379,14 @@ p.highlighted {
 /* Schedule container styles */
 /*************************/
 #schedule a.back-to-top {
-  color: #364443; }
+  color: #495E72; }
 
 .schedule {
   width: 98%;
   margin-left: 2%; }
 
 .day-bar {
-  background-color: #364443;
+  background-color: #495E72;
   margin-top: 2px;
   margin-bottom: 2px; }
 
@@ -413,13 +413,13 @@ p.highlighted {
   color: #ffffff; }
 
 .day:first-child .schedule-content .col-6:first-child {
-  border-right: #4A5E5D solid 1px; }
+  border-right: #59748C solid 1px; }
 
 .day:first-child .schedule-content .col-6:last-child {
   border-left: none; }
 
 .schedule-content .col-6:last-child {
-  border-left: #4A5E5D solid 1px; }
+  border-left: #59748C solid 1px; }
 
 .schedule-content .col-6 {
   padding-bottom: 20px; }
@@ -452,7 +452,7 @@ p.highlighted {
 /*************************/
 footer {
   width: 100%;
-  background: #364443; }
+  background: #495E72; }
 
 .footer-links {
   padding-top: 100px;

@@ -1,3 +1,11 @@
+$shade1 : #93C0E8;
+$shade2 : #83ABCF;
+$shade3 : #7193B2;
+$shade4 : #59748C;
+$shade5 : #495E72;
+
+$accent : #A01912;
+
 /* glitch animation from http://codepen.io/chriscoyier/pen/FwJux/ by chriscoyier */
 @mixin imgGlitch($name, $intensity, $width, $height, $top, $left) {
   
@@ -56,21 +64,21 @@
 	padding-right: 0;
 }
 #home {
-	background: #729897;
+	background: $shade1;
 	height: 100%;
 }
 #about {
-	background: #678887;
+	background: $shade2;
 }
 #attend {
-	background: #5C7776;
+	background: $shade3;
 }
 #schedule {
-	background: #4A5E5D;
+	background: $shade4;
 }
 
 header {
-	color: #A01912;
+	color: $accent;
 	font-weight: bold;
 	font-size: 43px;
 	margin-bottom: 30px;
@@ -91,7 +99,7 @@ a.back-to-top {
 }
 .subhead {
 	font-weight: bold;
-	color: #A01912;
+	color: $accent;
 	margin-right: 7px;
 }
 .content p {
@@ -111,8 +119,8 @@ p.address {
 	padding: 5px;
 	font-weight: bold;
 	font-size: 1.2em;
-	border-bottom: #4A5E5D solid 1px;
-	border-top: #4A5E5D solid 1px;
+	border-bottom: $shade4 solid 1px;
+	border-top: $shade4 solid 1px;
 }
 .section-start {
 	margin-top: 15px;
@@ -154,7 +162,7 @@ nav {
 nav a {
 	display: block;
 	margin-bottom: 15px;
-	color: #A01912;
+	color: $accent;
 	font-weight: bold;
 	font-size: 43px;
 	text-decoration: none;
@@ -204,7 +212,7 @@ nav a {
 /*************************/
 
 #about a.back-to-top {
-	color: #5C7776;
+	color: $shade3;
 }
 .monitor-slideshow {
 	height: 700px;
@@ -284,7 +292,7 @@ p.highlighted {
 	margin-left: auto;
 }
 .directions {
-	color: #5C7776;
+	color: $shade3;
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 15px;
@@ -296,7 +304,7 @@ p.highlighted {
 /*************************/
 
 #attend a.back-to-top {
-	color: #4A5E5D;
+	color: $shade4;
 }
 .console-frame {
 	background-color: #B3B3B3;
@@ -305,7 +313,7 @@ p.highlighted {
 	margin-right: -50px;
 }
 .console-menu-bar {
-	background-color: #4A5E5D;
+	background-color: $shade4;
 	width: 100%;
 	height: 20px;
 	border-top-right-radius: 5px;
@@ -317,7 +325,7 @@ p.highlighted {
 	margin: 2px;
 	height: 16px;
 	width: 16px;
-	color: #364443;
+	color: $shade5;
 }
 .console-body {
 	width: 100%;
@@ -375,14 +383,14 @@ p.highlighted {
 /*************************/
 
 #schedule a.back-to-top {
-	color: #364443;
+	color: $shade5;
 }
 .schedule {
 	width: 98%;
 	margin-left: 2%;
 }
 .day-bar {
-	background-color: #364443;
+	background-color: $shade5;
 	margin-top: 2px;
 	margin-bottom: 2px;
 }
@@ -409,13 +417,13 @@ p.highlighted {
 	color: #ffffff;
 }
 .day:first-child .schedule-content .col-6:first-child {
-	border-right: #4A5E5D solid 1px;
+	border-right: $shade4 solid 1px;
 }
 .day:first-child .schedule-content .col-6:last-child {
 	border-left: none;
 }
 .schedule-content .col-6:last-child {
-	border-left: #4A5E5D solid 1px;
+	border-left: $shade4 solid 1px;
 }
 .schedule-content .col-6 {
 	padding-bottom: 20px;
@@ -451,7 +459,7 @@ p.highlighted {
 
 footer {
 	width: 100%;
-	background: #364443;
+	background: $shade5;
 }
 .footer-links {
 	padding-top: 100px;

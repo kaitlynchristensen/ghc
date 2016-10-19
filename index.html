@@ -64,8 +64,10 @@
 			</div>
 			<div class="control-arrows">
 				<div id="right-arrow"></div>
-				<div class="directions">use arrow keys</div>
+				<div class="directions">use right / left keys</div>
 				<div id="left-arrow"></div>
+				<div class="click-control" id="click-control-left"></div>
+				<div class="click-control" id="click-control-right"></div>
 			</div>
 
 		</div>
@@ -459,6 +461,13 @@ $(document).ready(function() {
 	    if (e.keyCode == 39) { // right pressed
 	    	nextAbout();
 	    }
+	});
+
+	$('#click-control-left').click(function() {
+		prevAbout();
+	});
+	$('#click-control-right').click(function() {
+		nextAbout();
 	});
 
 	$('#attend-link').hover(function() {

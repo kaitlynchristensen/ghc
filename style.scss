@@ -290,6 +290,7 @@ p.highlighted {
 	margin-top: 40px;
 	margin-right: auto;
 	margin-left: auto;
+	position: relative;
 }
 .directions {
 	color: $shade3;
@@ -297,6 +298,20 @@ p.highlighted {
 	text-transform: uppercase;
 	font-size: 15px;
 	line-height: 20px;
+}
+.click-control {
+	width: 50%;
+	height: 100%;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	cursor: pointer;
+}
+#click-control-left {
+	left: 0;
+}
+#click-control-right {
+	right: 0;
 }
 
 /*************************/

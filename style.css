@@ -147,50 +147,50 @@ nav a {
 
 @keyframes glitchy-words-anim-1 {
   0% {
-    clip: rect(147px, 807px, 58px, 0); }
+    clip: rect(328px, 807px, 384px, 0); }
   10% {
-    clip: rect(78px, 807px, 398px, 0); }
+    clip: rect(301px, 807px, 388px, 0); }
   20% {
-    clip: rect(41px, 807px, 420px, 0); }
+    clip: rect(182px, 807px, 176px, 0); }
   30% {
-    clip: rect(494px, 807px, 15px, 0); }
+    clip: rect(191px, 807px, 140px, 0); }
   40% {
-    clip: rect(330px, 807px, 382px, 0); }
+    clip: rect(188px, 807px, 308px, 0); }
   50% {
-    clip: rect(211px, 807px, 217px, 0); }
+    clip: rect(207px, 807px, 494px, 0); }
   60% {
-    clip: rect(166px, 807px, 204px, 0); }
+    clip: rect(200px, 807px, 41px, 0); }
   70% {
-    clip: rect(108px, 807px, 427px, 0); }
+    clip: rect(162px, 807px, 474px, 0); }
   80% {
-    clip: rect(321px, 807px, 348px, 0); }
+    clip: rect(274px, 807px, 46px, 0); }
   90% {
-    clip: rect(389px, 807px, 300px, 0); }
+    clip: rect(376px, 807px, 212px, 0); }
   100% {
-    clip: rect(323px, 807px, 79px, 0); } }
+    clip: rect(51px, 807px, 175px, 0); } }
 @keyframes glitchy-words-anim-2 {
   0% {
-    clip: rect(332px, 807px, 243px, 0); }
+    clip: rect(60px, 807px, 99px, 0); }
   10% {
-    clip: rect(65px, 807px, 197px, 0); }
+    clip: rect(60px, 807px, 134px, 0); }
   20% {
-    clip: rect(28px, 807px, 311px, 0); }
+    clip: rect(224px, 807px, 402px, 0); }
   30% {
-    clip: rect(432px, 807px, 311px, 0); }
+    clip: rect(393px, 807px, 334px, 0); }
   40% {
-    clip: rect(19px, 807px, 160px, 0); }
+    clip: rect(454px, 807px, 492px, 0); }
   50% {
-    clip: rect(314px, 807px, 110px, 0); }
+    clip: rect(438px, 807px, 247px, 0); }
   60% {
-    clip: rect(144px, 807px, 199px, 0); }
+    clip: rect(299px, 807px, 321px, 0); }
   70% {
-    clip: rect(423px, 807px, 300px, 0); }
+    clip: rect(189px, 807px, 363px, 0); }
   80% {
-    clip: rect(258px, 807px, 83px, 0); }
+    clip: rect(167px, 807px, 219px, 0); }
   90% {
-    clip: rect(101px, 807px, 184px, 0); }
+    clip: rect(135px, 807px, 271px, 0); }
   100% {
-    clip: rect(92px, 807px, 122px, 0); } }
+    clip: rect(265px, 807px, 105px, 0); } }
 .glitchy-animate > img {
   position: absolute;
   top: 0px;
@@ -290,7 +290,8 @@ p.highlighted {
   height: 20px;
   margin-top: 40px;
   margin-right: auto;
-  margin-left: auto; }
+  margin-left: auto;
+  position: relative; }
 
 .directions {
   color: #7193B2;
@@ -298,6 +299,20 @@ p.highlighted {
   text-transform: uppercase;
   font-size: 15px;
   line-height: 20px; }
+
+.click-control {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  cursor: pointer; }
+
+#click-control-left {
+  left: 0; }
+
+#click-control-right {
+  right: 0; }
 
 /*************************/
 /* Attend container styles */
